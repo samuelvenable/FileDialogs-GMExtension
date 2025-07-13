@@ -235,11 +235,11 @@ ShowQuestion("Here is a question box. Yes or no?");
 ShowQuestionExt("Here is yet another question box. Yes, no, or cancel?");
 
 // Select One Existing File and Echo the Result On-Open-Button
-var lpDialogResult = GetOpenFileName(lpFilter, @'Select a file', "", @'Open');
+var lpDialogResult = GetOpenFileName(lpFilter, @'Select a file', "", @'Open File');
 if (lpDialogResult != "") ShowMessage(lpDialogResult);
 
 // Select One (or More) Existing File(s) and Echo the Result On-Open-Button
-lpDialogResult = GetOpenFileNames(lpFilter, @'Select one or more files', "", @'Open');
+lpDialogResult = GetOpenFileNames(lpFilter, @'Select one or more files', "", @'Open Files');
 if (lpDialogResult != "") ShowMessage(lpDialogResult);
 
 // Select One New (or Existing) File and Echo the Result On-Save-Button

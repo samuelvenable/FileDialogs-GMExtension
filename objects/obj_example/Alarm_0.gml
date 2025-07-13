@@ -11,7 +11,7 @@
 // Also good for creating your own translation 
 // American English is the Language by Default
 // There are Two Other Language Localizations:
-DialogSetLocaleToAmericanEnglish();
+//DialogSetLocaleToAmericanEnglish();
 //DialogSetLocaleToSimplifiedChinese();
 //DialogSetLocaleToBrazilianPortuguese();
 
@@ -19,16 +19,13 @@ DialogSetLocaleToAmericanEnglish();
 var lpFilter = "Supported Image Files (*.png *.gif *.jpg *.jpeg)|*.png;*.gif;*.jpg;*.jpeg|PNG Image Files (*.png)|*.png|GIF Image Files (*.gif)|*.gif|JPEG Image Files (*.jpg *.jpeg)|*.jpg;*.jpeg";
 
 // Set Window Size for File Dialogs
-DialogSetWindowSize(720, 360);
+DialogSetWindowSize(720, 382);
 
 // Set Caption for Regular Dialogs
 EnvironmentSetVariable("IMGUI_DIALOG_CAPTION", window_get_caption());
 
-// Do Not Show Any Dialog in Borderless Mode (Default Behavior):
+// Do Not Show Any Dialog in Borderless Mode:
 EnvironmentSetVariable("IMGUI_DIALOG_NOBORDER", string(false));
-
-// Do Not Allow File Dialogs to be Resizeable (Default Behavior):
-EnvironmentSetVariable("IMGUI_DIALOG_RESIZE", string(false));
 
 // Do Not Display Any Dialog as a Fullscreen Window (Default Behavior):
 EnvironmentSetVariable("IMGUI_DIALOG_FULLSCREEN", string(false));
@@ -258,14 +255,14 @@ lpDialogResult = GetString("Enter a string in the input box below:", "ENTER TEXT
 if (lpDialogResult != "") ShowMessage(lpDialogResult);
 
 // Force GetString/Number calls to have no Cancel Button
-EnvironmentSetVariable("IMGUI_INPUT_OKONLY", string(1));
+EnvironmentSetVariable("IMGUI_DIALOG_CANCELABLE", string(0));
 
 // Enter a Number in the TextBox and Echo the Result
 var nDialogResult = GetNumber("Enter a number in the input box below:", 404);
 ShowMessage(nDialogResult);
 
 // Force GetString/Number calls to have a Cancel Button
-EnvironmentSetVariable("IMGUI_INPUT_OKONLY", string(0));
+EnvironmentSetVariable("IMGUI_DIALOG_CANCELABLE", string(1));
 
 // End of Demo
 game_end();

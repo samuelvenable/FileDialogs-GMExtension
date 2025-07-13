@@ -32,7 +32,9 @@ function DialogSetLocaleToLanguageTemplate() {
 	environment_set_variable("IMGUI_CANCEL",                             "");
 	environment_set_variable("IMGUI_SEARCH",                             "");
 	environment_set_variable("IMGUI_FILE_NAME_WITH_COLON",               "");
-	environment_set_variable("IMGUI_FILE_NAME_WITHOUT_COLON",            "");
+	environment_set_variable("IMGUI_FILE_NAME_WITHOUT_COLON",            "");	
+	environment_set_variable("IMGUI_DIRECTORY_NAME_WITH_COLON",          "");
+	environment_set_variable("IMGUI_DIRECTORY_NAME_WITHOUT_COLON",       "");
 	environment_set_variable("IMGUI_SAVE",                               "");
 	environment_set_variable("IMGUI_OPEN",                               "");
 }
@@ -61,6 +63,8 @@ function DialogSetLocaleToAmericanEnglish() {
 	environment_set_variable("IMGUI_SEARCH",                             "Search");
 	environment_set_variable("IMGUI_FILE_NAME_WITH_COLON",               "File name:");
 	environment_set_variable("IMGUI_FILE_NAME_WITHOUT_COLON",            "File name");
+	environment_set_variable("IMGUI_DIRECTORY_NAME_WITH_COLON",          "Directory name:");
+	environment_set_variable("IMGUI_DIRECTORY_NAME_WITHOUT_COLON",       "Directory name");
 	environment_set_variable("IMGUI_SAVE",                               "Save");
 	environment_set_variable("IMGUI_OPEN",                               "Open");
 }
@@ -89,6 +93,8 @@ function DialogSetLocaleToSimplifiedChinese() {
 	environment_set_variable("IMGUI_SEARCH",                             "搜索");
 	environment_set_variable("IMGUI_FILE_NAME_WITH_COLON",               "文件名：");
 	environment_set_variable("IMGUI_FILE_NAME_WITHOUT_COLON",            "文件名");
+	environment_set_variable("IMGUI_DIRECTORY_NAME_WITH_COLON",          "目录名称：");
+	environment_set_variable("IMGUI_DIRECTORY_NAME_WITHOUT_COLON",       "目录名称");
 	environment_set_variable("IMGUI_SAVE",                               "保存");
 	environment_set_variable("IMGUI_OPEN",                               "打开");
 }
@@ -117,6 +123,8 @@ function DialogSetLocaleToBrazilianPortuguese() {
 	environment_set_variable("IMGUI_SEARCH",                             "Pesquisar");
 	environment_set_variable("IMGUI_FILE_NAME_WITH_COLON",               "Nome do arquivo:");
 	environment_set_variable("IMGUI_FILE_NAME_WITHOUT_COLON",            "Nome do arquivo");
+	environment_set_variable("IMGUI_DIRECTORY_NAME_WITH_COLON",          "Nome do diretório:");
+	environment_set_variable("IMGUI_DIRECTORY_NAME_WITHOUT_COLON",       "Nome do diretório");
 	environment_set_variable("IMGUI_SAVE",                               "Salvar");
 	environment_set_variable("IMGUI_OPEN",                               "Abrir");
 }

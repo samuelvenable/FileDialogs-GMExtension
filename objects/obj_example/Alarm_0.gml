@@ -11,7 +11,7 @@
 // Also good for creating your own translation 
 // American English is the Language by Default
 // There are Two Other Language Localizations:
-//DialogSetLocaleToAmericanEnglish();
+DialogSetLocaleToAmericanEnglish();
 //DialogSetLocaleToSimplifiedChinese();
 //DialogSetLocaleToBrazilianPortuguese();
 

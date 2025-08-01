@@ -42,4 +42,5 @@ EnvironmentSetVariable("IMGUI_DIALOG_CANCELABLE", string(1));
 
 // End of Demo
 if (nDialogId == 9) game_end();
+
 nDialogId++;

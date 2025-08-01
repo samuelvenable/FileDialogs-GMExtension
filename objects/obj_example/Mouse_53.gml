@@ -26,6 +26,9 @@ if (lpDialogResult != "") ShowMessage(lpDialogResult); }
 if (nDialogId == 6) { lpDialogResult = GetDirectory("Select Directory", "");
 if (lpDialogResult != "") ShowMessage(lpDialogResult); }
 
+// Force GetString/Number calls to have a Cancel Button
+EnvironmentSetVariable("IMGUI_DIALOG_CANCELABLE", string(1));
+
 // Enter a String in the TextBox and Echo the Result if the Result is Not Empty
 if (nDialogId == 7) { lpDialogResult = GetString("Enter a string in the input box below:", "ENTER TEXT HERE");
 if (lpDialogResult != "") ShowMessage(lpDialogResult); }

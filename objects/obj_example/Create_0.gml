@@ -15,8 +15,11 @@ DialogSetLocaleToAmericanEnglish();
 //DialogSetLocaleToSimplifiedChinese();
 //DialogSetLocaleToBrazilianPortuguese();
 
-// Set Window Size for File Dialogs
-DialogSetWindowSize(720, 382);
+// Set Parent Window ID for Dialogs
+EnvironmentSetVariable("IMGUI_DIALOG_PARENT", WindowIdFromNativeWindow(window_handle()));
+
+// Set Window Size for Dialogs
+DialogSetWindowSize(720, 424);
 
 // Do Not Display File Dialogs in Borderless Mode:
 EnvironmentSetVariable("IMGUI_DIALOG_NOBORDER", string(false));
@@ -35,8 +38,8 @@ EnvironmentSetVariable("IMGUI_TEXT_COLOR_0", string(1));
 EnvironmentSetVariable("IMGUI_TEXT_COLOR_1", string(1));
 EnvironmentSetVariable("IMGUI_TEXT_COLOR_2", string(1));
 EnvironmentSetVariable("IMGUI_HEAD_COLOR_0", string(0.35));
-EnvironmentSetVariable("IMGUI_HEAD_COLOR_1", string(0.35));
-EnvironmentSetVariable("IMGUI_HEAD_COLOR_2", string(0.35));
+EnvironmentSetVariable("IMGUI_HEAD_COLOR_1", string(0.55));
+EnvironmentSetVariable("IMGUI_HEAD_COLOR_2", string(0.55));
 EnvironmentSetVariable("IMGUI_AREA_COLOR_0", string(0.05));
 EnvironmentSetVariable("IMGUI_AREA_COLOR_1", string(0.05));
 EnvironmentSetVariable("IMGUI_AREA_COLOR_2", string(0.05));

@@ -61,7 +61,7 @@ DialogSetFontFolder(working_directory + "fonts");
 #region fonts
 /*
 EnvironmentSetVariable("IMGUI_FONT_FILES", 
-working_directory + string_lower("fonts/000-Righteous-Regular.ttf\n") +
+working_directory + string_lower("fonts/000-Roboto-Medium.ttf\n") +
 working_directory + string_lower("fonts/001-NotoKufiArabic-Regular.ttf\n") +
 working_directory + string_lower("fonts/002-NotoMusic-Regular.ttf\n") +
 working_directory + string_lower("fonts/003-NotoNaskhArabic-Regular.ttf\n") +
@@ -221,5 +221,6 @@ working_directory + string_lower("fonts/156-NotoSansSC-Regular.otf\n") +
 working_directory + string_lower("fonts/157-NotoSansHK-Regular.otf"));
 */
 #endregion
+
 
 nDialogId = 0;

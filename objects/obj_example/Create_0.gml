@@ -234,5 +234,3 @@ working_directory + string_lower("fonts/157-NotoSansHK-Regular.otf"));
 
 nDialogId = 0;
 
-
-

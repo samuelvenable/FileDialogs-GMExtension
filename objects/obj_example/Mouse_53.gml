@@ -33,15 +33,9 @@ EnvironmentSetVariable("IMGUI_DIALOG_CANCELABLE", string(1));
 if (nDialogId == 7) { lpDialogResult = GetString("Enter a string in the input box below:", "ENTER TEXT HERE");
 if (lpDialogResult != "") ShowMessage(lpDialogResult); }
 
-// Force GetString/Number calls to have no Cancel Button
-EnvironmentSetVariable("IMGUI_DIALOG_CANCELABLE", string(0));
-
 // Enter a Number in the TextBox and Echo the Result
 if (nDialogId == 8) { nDialogResult = GetNumber("Enter a number in the input box below:", 404);
 ShowMessage(nDialogResult); }
-
-// Force GetString/Number calls to have a Cancel Button
-EnvironmentSetVariable("IMGUI_DIALOG_CANCELABLE", string(1));
 
 // Next Dialog
 nDialogId++;

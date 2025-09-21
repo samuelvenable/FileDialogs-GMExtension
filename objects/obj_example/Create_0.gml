@@ -1,4 +1,13 @@
-window_set_fullscreen(true);
+if (os_type == os_macosx || os_type == os_linux) {
+  window_set_fullscreen(true);
+  window_set_rectangle(0, 0, display_get_width(), display_get_height());
+  surface_resize(application_surface, display_get_width(), display_get_height());
+} else if (os_type == os_windows) {
+  window_set_fullscreen(false);
+  window_set_showborder(false);
+  window_set_rectangle(0, 0, display_get_width(), display_get_height());
+  surface_resize(application_surface, display_get_width(), display_get_height());
+}
 
 // Ubuntu export needs packages installed to work
 // Run the following terminal command to install:
@@ -226,4 +235,5 @@ working_directory + string_lower("fonts/157-NotoSansHK-Regular.otf"));
 
 
 nDialogId = 0;
+
 

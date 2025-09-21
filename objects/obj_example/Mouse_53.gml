@@ -43,8 +43,8 @@ ShowMessage(nDialogResult); }
 // Force GetString/Number calls to have a Cancel Button
 EnvironmentSetVariable("IMGUI_DIALOG_CANCELABLE", string(1));
 
-// End of Demo
-if (nDialogId == 9) game_end();
-
 // Next Dialog
 nDialogId++;
+
+// End of Demo
+if (nDialogId == 9) nDialogId = 0;

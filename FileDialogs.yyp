@@ -27,7 +27,7 @@
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Timelines","folderPath":"folders/Timelines.yy",},
   ],
   "IncludedFiles": [
-    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"000-Righteous-Regular.ttf","CopyToMask":-1,"filePath":"datafiles/fonts",},
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"000-Roboto-Medium.ttf","CopyToMask":-1,"filePath":"datafiles/fonts",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"001-NotoKufiArabic-Regular.ttf","CopyToMask":-1,"filePath":"datafiles/fonts",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"002-NotoMusic-Regular.ttf","CopyToMask":-1,"filePath":"datafiles/fonts",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"003-NotoNaskhArabic-Regular.ttf","CopyToMask":-1,"filePath":"datafiles/fonts",},
@@ -186,7 +186,7 @@
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"156-NotoSansSC-Regular.otf","CopyToMask":-1,"filePath":"datafiles/fonts",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"157-NotoSansHK-Regular.otf","CopyToMask":-1,"filePath":"datafiles/fonts",},
     {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"NotoSans-License.txt","CopyToMask":-1,"filePath":"datafiles/fonts",},
-    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"Righteous-License.txt","CopyToMask":-1,"filePath":"datafiles/fonts",},
+    {"resourceType":"GMIncludedFile","resourceVersion":"1.0","name":"Roboto-License.txt","CopyToMask":-1,"filePath":"datafiles/fonts",},
   ],
   "isEcma": false,
   "LibraryEmitters": [],

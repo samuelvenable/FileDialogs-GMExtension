@@ -21,7 +21,7 @@ EnvironmentSetVariable("IMGUI_DIALOG_PARENT", WindowIdFromNativeWindow(window_ha
 // Set Window Size for Dialogs
 DialogSetWindowSize(720, 424);
 
-// Do Not Display File Dialogs in Borderless Mode:
+// Do Not Display File Dialogs in Borderless Mode (Default Behavior):
 EnvironmentSetVariable("IMGUI_DIALOG_NOBORDER", string(false));
 
 // Do Not Display Any Dialog as a Fullscreen Window (Default Behavior):
@@ -224,3 +224,4 @@ working_directory + string_lower("fonts/157-NotoSansHK-Regular.otf"));
 
 
 nDialogId = 0;
+
